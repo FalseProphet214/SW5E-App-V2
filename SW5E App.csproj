@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>SW5E_App</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Objects\Classes\Descriptions\" />
+    <Folder Include="Objects\Classes\JSON\" />
+    <Folder Include="Objects\Species\Descriptions\" />
+    <Folder Include="Objects\Species\JSON\" />
+    <Folder Include="Player Things\Character Sheet Forms\" />
+    <Folder Include="Saved Characters\" />
+    <Folder Include="Source Books\Players Handbook\" />
+    <Folder Include="Source Books\Scum and Villainy\" />
+    <Folder Include="Source Books\Starships of the Galaxy\" />
+    <Folder Include="Source Books\Wretched Hives\" />
+  </ItemGroup>
+
+</Project>
