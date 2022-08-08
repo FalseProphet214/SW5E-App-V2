@@ -84,10 +84,32 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region SPECIES TAB CODE
 
+        private void SpeciesSelect(object sender, EventArgs e)
+        {
+            string selectedSpecies = SpeciesList.SelectedItems[0].ToString();
+            _selectedSpecies = selectedSpecies;
+
+            SpeciesRtf.LoadFile($@"{_speciesDescriptionsPath}\{selectedSpecies}.rtf");
+        }
+
+        private void SpeciesSelectBtn_Click(object sender, EventArgs e)
+        {
+            if (_selectedSpecies == null)
+            {
+                
+            }
+            else
+            {
+                SelectedSpeciesTxt.Text = "SPECIES: " + _selectedSpecies;
+                CharacterBuilderTabs.SelectTab(1);
+            }
+        }
+
         #endregion
 
         #region CLASSES TAB CODE
 
         #endregion
+
     }
 }
