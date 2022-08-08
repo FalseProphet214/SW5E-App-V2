@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -54,12 +55,38 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #endregion
 
-        #region FORM INITIALIZATION
+        #region FORM INITIALIZATION CODE
 
         public Character_Builder()
         {
             InitializeComponent();
+
+            #region SPECIES TAB INITIALIZATION
+
+            string[] speciesList = Directory.GetFiles($@"{_speciesDescriptionsPath}")
+                .Select(Path.GetFileNameWithoutExtension)
+                .ToArray();
+
+            foreach (string species in speciesList)
+            {
+                string speciesName = species;
+                SpeciesList.Items.Add(speciesName);
+            }
+
+            #endregion
+
+            #region CLASSES TAB INITIALIZATION
+
+            #endregion
         }
+
+        #endregion
+
+        #region SPECIES TAB CODE
+
+        #endregion
+
+        #region CLASSES TAB CODE
 
         #endregion
     }
