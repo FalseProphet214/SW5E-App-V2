@@ -63,7 +63,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
             #region SPECIES TAB INITIALIZATION
 
-            string[] speciesList = Directory.GetFiles($@"{_speciesDescriptionsPath}")
+            string[] speciesList = Directory.GetFiles(_speciesDescriptionsPath)
                 .Select(Path.GetFileNameWithoutExtension)
                 .ToArray();
 
@@ -76,6 +76,16 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             #endregion
 
             #region CLASSES TAB INITIALIZATION
+
+            string[] classesList = Directory.GetFiles(_classesDescriptionsPath)
+                .Select(Path.GetFileNameWithoutExtension)
+                .ToArray();
+
+            foreach (string classes in classesList)
+            {
+                string classTitle = classes;
+                ClassesList.Items.Add(classTitle);
+            }    
 
             #endregion
         }
@@ -109,7 +119,19 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region CLASSES TAB CODE
 
+        private void ClassSelect_Click(object sender, EventArgs e)
+        {
+            string selectedClass = ClassesList.SelectedItems[0].ToString();
+            _selectedClass = selectedClass;
+
+            ClassRtf.LoadFile($@"{_classesDescriptionsPath}\{selectedClass}.rtf");
+        }
+
         #endregion
 
+        private void Character_Builder_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

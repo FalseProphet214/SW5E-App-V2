@@ -36,12 +36,15 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             this.SpeciesLbl = new System.Windows.Forms.Label();
             this.SpeciesList = new System.Windows.Forms.ListBox();
             this.ClassesTab = new System.Windows.Forms.TabPage();
+            this.ClassRtf = new System.Windows.Forms.RichTextBox();
+            this.ClassesList = new System.Windows.Forms.ListBox();
             this.AbilitysSkillsTab = new System.Windows.Forms.TabPage();
             this.BackgroundTab = new System.Windows.Forms.TabPage();
             this.EquipmentTab = new System.Windows.Forms.TabPage();
             this.SelectedSpeciesTxt = new System.Windows.Forms.Label();
             this.CharacterBuilderTabs.SuspendLayout();
             this.SpeciesTab.SuspendLayout();
+            this.ClassesTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // CharacterBuilderTabs
@@ -113,6 +116,8 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             // 
             // ClassesTab
             // 
+            this.ClassesTab.Controls.Add(this.ClassRtf);
+            this.ClassesTab.Controls.Add(this.ClassesList);
             this.ClassesTab.Location = new System.Drawing.Point(4, 24);
             this.ClassesTab.Name = "ClassesTab";
             this.ClassesTab.Padding = new System.Windows.Forms.Padding(3);
@@ -120,6 +125,25 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             this.ClassesTab.TabIndex = 1;
             this.ClassesTab.Text = "Classes";
             this.ClassesTab.UseVisualStyleBackColor = true;
+            // 
+            // ClassRtf
+            // 
+            this.ClassRtf.Location = new System.Drawing.Point(322, 6);
+            this.ClassRtf.Name = "ClassRtf";
+            this.ClassRtf.Size = new System.Drawing.Size(865, 874);
+            this.ClassRtf.TabIndex = 1;
+            this.ClassRtf.Text = "";
+            // 
+            // ClassesList
+            // 
+            this.ClassesList.Font = new System.Drawing.Font("Open Sans", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ClassesList.FormattingEnabled = true;
+            this.ClassesList.ItemHeight = 55;
+            this.ClassesList.Location = new System.Drawing.Point(6, 6);
+            this.ClassesList.Name = "ClassesList";
+            this.ClassesList.Size = new System.Drawing.Size(310, 774);
+            this.ClassesList.TabIndex = 0;
+            this.ClassesList.SelectedIndexChanged += new System.EventHandler(this.ClassSelect_Click);
             // 
             // AbilitysSkillsTab
             // 
@@ -169,9 +193,11 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Character_Builder";
             this.Text = "Character_Builder";
+            this.Load += new System.EventHandler(this.Character_Builder_Load);
             this.CharacterBuilderTabs.ResumeLayout(false);
             this.SpeciesTab.ResumeLayout(false);
             this.SpeciesTab.PerformLayout();
+            this.ClassesTab.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,5 +216,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
         private System.Windows.Forms.RichTextBox SpeciesRtf;
         private System.Windows.Forms.Button SpeciesSelectBtn;
         private System.Windows.Forms.Label SelectedSpeciesTxt;
+        private System.Windows.Forms.ListBox ClassesList;
+        private System.Windows.Forms.RichTextBox ClassRtf;
     }
 }
