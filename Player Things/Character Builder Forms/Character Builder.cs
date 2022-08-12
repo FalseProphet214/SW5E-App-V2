@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using SW5E_App.Error_Forms;
+
 namespace SW5E_App.Player_Things.Character_Builder_Forms
 {
     public partial class Character_Builder : Form
@@ -107,7 +109,8 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
         {
             if (_selectedSpecies == null)
             {
-                
+                var newErrorForm = new Character_Builder_Error("Species");
+                newErrorForm.ShowDialog();
             }
             else
             {
@@ -126,6 +129,25 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             _selectedClass = selectedClass;
 
             ClassesRtf.LoadFile($@"{_classesDescriptionsPath}\{selectedClass}.rtf");
+        }
+
+        private void BackToSpeciesBtn_Click(object sender, EventArgs e)
+        {
+            CharacterBuilderTabs.SelectTab(0);
+        }
+
+        private void ClassSelectBtn_Click(object sender, EventArgs e)
+        {
+            if (_selectedClass == null)
+            {
+                var newErrorForm = new Character_Builder_Error("Class");
+                newErrorForm.ShowDialog();
+            }
+            else
+            {
+                SelectedClassTxt.Text = "CLASS: " + _selectedClass;
+                CharacterBuilderTabs.SelectTab(2);
+            }
         }
 
         #endregion
