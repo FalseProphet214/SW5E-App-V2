@@ -1,0 +1,38 @@
+{
+	"height":
+	{
+		"base": "2' 1\"",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "35 lb.",
+		"die": null,
+		"dieAmount": 1
+	},
+	"abilityIncrease":
+	{
+		"primary":
+		[
+			{
+				"ability": "dex",
+				"increase": 2
+			}
+		]
+		"secondary":
+		[
+			{
+				"ability": "cha",
+				"increase": 1
+			}
+		]
+	},
+	"size": "small",
+	"speed": 25,
+	"languages":
+	[
+		"Aleena",
+		"Galactic Basic"
+	]
+}

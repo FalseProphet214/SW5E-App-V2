@@ -1,0 +1,39 @@
+{
+	"height":
+	{
+		"base": "1' 1\"",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "100 lb.",
+		"die": "d4",
+		"dieAmount": 1
+	},
+	"abilityIncrease":
+	{
+		"primary":
+		[
+			{
+				"ability": "int",
+				"increase": 2
+			}
+		],
+		"secondary":
+		[
+			{
+				"ability": "int",
+				"increase": 1
+			}
+		]
+	},
+	"size": "size",
+	"speed": 30,
+	"languages":
+	[
+		"language1",
+		"language2",
+		"language3"
+	]
+}

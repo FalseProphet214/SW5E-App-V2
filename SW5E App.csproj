@@ -8,11 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Player Things\Character Sheet Forms\**" />
+    <EmbeddedResource Remove="Player Things\Character Sheet Forms\**" />
+    <None Remove="Player Things\Character Sheet Forms\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Objects\Classes\Descriptions\" />
     <Folder Include="Objects\Classes\JSON\" />
     <Folder Include="Objects\Species\Descriptions\" />
-    <Folder Include="Objects\Species\JSON\" />
-    <Folder Include="Player Things\Character Sheet Forms\" />
     <Folder Include="Saved Characters\" />
     <Folder Include="Source Books\Players Handbook\" />
     <Folder Include="Source Books\Scum and Villainy\" />

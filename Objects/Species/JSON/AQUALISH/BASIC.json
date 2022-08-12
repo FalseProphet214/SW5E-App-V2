@@ -1,0 +1,38 @@
+{
+	"height":
+	{
+		"base": "5' 5\"",
+		"die": "d10",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "140 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease":
+	{
+		"primary":
+		[
+			{
+				"ability": "str",
+				"increase": 2
+			}
+		],
+		"secondary":
+		[
+			{
+				"ability": "cha",
+				"increase": 1
+			}
+		]
+	},
+	"size": "Medium",
+	"speed": 30,
+	"languages":
+	[
+		"Galactic Basic",
+		"Aqualish"
+	]
+}

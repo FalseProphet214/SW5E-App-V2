@@ -1,0 +1,38 @@
+{
+	"height":
+	{
+		"base": "4' 8\"",
+		"die": "d8",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "100 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease":
+	{
+		"primary":
+		[
+			{
+				"ability": "dex",
+				"increase": 2
+			}
+		],
+		"secondary":
+		[
+			{
+				"ability": "cha",
+				"increase": 1
+			}
+		]
+	},
+	"size": "Medium",
+	"speed": 30,
+	"languages":
+	[
+		"Balosur",
+		"Galactic Basic"
+	]
+}

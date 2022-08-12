@@ -1,0 +1,39 @@
+{
+	"height":
+	{
+		"base": "4' 11\"",
+		"die": "d8",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "95 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease":
+	{
+		"primary":
+		[
+			{
+				"ability": "cha",
+				"increase": 2
+			}
+		],
+		"secondary":
+		[
+			{
+				"ability": "any",
+				"increase": 1
+			}
+		]
+	},
+	"size": "Medium",
+	"speed": 30,
+	"languages":
+	[
+		"Clawdite",
+		"Galactic Basic",
+		"any"
+	]
+}

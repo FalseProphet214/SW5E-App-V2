@@ -1,0 +1,38 @@
+{
+	"height":
+	{
+		"base": "4' 10\"",
+		"die": "d8",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "120 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease":
+	{
+		"primary":
+		[
+			{
+				"ability": "con",
+				"increase": 2
+			}
+		],
+		"secondary":
+		[
+			{
+				"ability": "cha",
+				"increase": 1
+			}
+		]
+	},
+	"size": "Medium",
+	"speed": 30,
+	"languages":
+	[
+		"Devaronese",
+		"Galactic Basic"
+	]
+}

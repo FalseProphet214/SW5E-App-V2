@@ -1,0 +1,39 @@
+{
+	"height":
+	{
+		"base": "4' 9\"",
+		"die": "d6",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "100 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease":
+	{
+		"primary":
+		[
+			{
+				"ability": "int",
+				"increase": 2
+			}
+		],
+		"secondary":
+		[
+			{
+				"ability": "dex",
+				"increase": 1
+			}
+		]
+	},
+	"size": "Medium",
+	"speed": 30,
+	"languages":
+	[
+		"Bith",
+		"Galactic Basic",
+		"any"
+	]
+}
