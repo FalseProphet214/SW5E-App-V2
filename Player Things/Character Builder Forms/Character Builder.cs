@@ -43,6 +43,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
         string _speciesJsonPath = @"Objects\Species\JSON";
         string _classesDescriptionsPath = @"Objects\Classes\Descriptions";
         string _classesJsonPath = @"Objects\Classes\JSON";
+        string _backgroundDescriptionPath = @"Objects\Backgrounds\Descriptions";
         string _backgroundJsonPath = @"Objects\Backgrounds\JSON";
 
         #endregion
@@ -63,7 +64,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
             #region SPECIES TAB INITIALIZATION
 
-            string[] speciesList = Directory.GetFiles($@"{_speciesDescriptionsPath}")
+            string[] speciesList = Directory.GetFiles(_speciesDescriptionsPath)
                 .Select(Path.GetFileNameWithoutExtension)
                 .ToArray();
 
@@ -76,6 +77,16 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             #endregion
 
             #region CLASSES TAB INITIALIZATION
+
+            string[] classesList = Directory.GetFiles(_classesDescriptionsPath)
+                .Select(Path.GetFileNameWithoutExtension)
+                .ToArray();
+
+            foreach (string classes in classesList)
+            {
+                string className = classes;
+                ClassesList.Items.Add(className);
+            }
 
             #endregion
         }
@@ -109,7 +120,14 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region CLASSES TAB CODE
 
-        #endregion
+        private void ClassSelect(object sender, EventArgs e)
+        {
+            string selectedClass = ClassesList.SelectedItems[0].ToString();
+            _selectedClass = selectedClass;
 
+            ClassesRtf.LoadFile($@"{_classesDescriptionsPath}\{selectedClass}.rtf");
+        }
+
+        #endregion
     }
 }
