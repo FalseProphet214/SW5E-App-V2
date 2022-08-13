@@ -23,6 +23,7 @@
 	},
 	"size": "small",
 	"speed": 25,
+	"type":  null,
 	"languages": [
 		"Aleena",
 		"Galactic Basic"

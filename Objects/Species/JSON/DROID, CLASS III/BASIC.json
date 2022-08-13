@@ -1,31 +1,33 @@
 {
-	"height": {
-		"base": "5' 5\"",
-		"die": "d8",
+	"height":
+	{
+		"base": "5' 6\"",
+		"die": "d4",
 		"dieAmount": 2
 	},
-	"weight": {
+	"weight":
+	{
 		"base": "120 lb.",
-		"die": "d4",
+		"die": "d6",
 		"dieAmount": 2
 	},
 	"abilityIncrease": {
 		"primary": {
-			"ability": [ "Dexterity" ],
+			"ability": [ "Charisma" ],
 			"increase": 2,
 			"count": 1
 		},
 		"secondary": {
-			"ability": [ "Wisdom" ],
+			"ability": [ "Intelligence", "Wisdom" ],
 			"increase": 1,
 			"count": 1
 		}
 	},
 	"size": "Medium",
-	"speed": 30,
-	"type": null,
-	"languages": [
-		"Chagri",
-		"Galactic Basic"
+	"speed": 25,
+	"type": "droid",
+	"languages":
+	[
+		"All"
 	]
 }

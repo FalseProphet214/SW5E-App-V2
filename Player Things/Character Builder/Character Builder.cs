@@ -19,20 +19,35 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region ABILITY SCORES
 
-        public int _str = 0;
-        public int _dex = 0;
-        public int _con = 0;
-        public int _int = 0;
-        public int _wis = 0;
-        public int _cha = 0;
+        // These are used store base ability scores during the character creation progress
+        public int _strScore = 0;
+        public int _dexScore = 0;
+        public int _conScore = 0;
+        public int _intScore = 0;
+        public int _wisScore = 0;
+        public int _chaScore = 0;
 
-        public int increasePrimary = 0;
-        public int increaseSecondary = 0;
+        // These are used to store any ability score increases from selected races/backgrounds
+        public int _strIncrease = 0;
+        public int _dexIncrease = 0;
+        public int _conIncrease = 0;
+        public int _intIncrease = 0;
+        public int _wisIncrease = 0;
+        public int _chaIncrease = 0;
+
+        // These will be used to store the finalized ability scores for the character sheet form (not implemented yet)
+        public int _strength = 0;
+        public int _dexterity = 0;
+        public int _constitution = 0;
+        public int _intelligence = 0;
+        public int _wisdom = 0;
+        public int _charisma = 0;
 
         #endregion
 
         #region SELECTED OBJECTS
 
+        // These are used to store the selected objects during the character creation process
         public string _selectedSpecies;
         public string _selectedClass;
         public string _selectedBackground;
@@ -41,6 +56,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region FILE PATHS
 
+        // where the needed file paths are stored
         string _speciesDescriptionsPath = @"Objects\Species\Descriptions";
         string _speciesJsonPath = @"Objects\Species\JSON";
         string _classesDescriptionsPath = @"Objects\Classes\Descriptions";
@@ -52,7 +68,8 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region TOOLS
 
-        public int _skillsChecked;
+        // Where the variables that are used for different actions later in the form code base
+        public int _skillsChecked = 0;
 
         #endregion
 
@@ -97,6 +114,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region SPECIES TAB CODE
 
+        // This will set the selected speacies to the index currently highlighted in the SpeciesList
         private void SpeciesSelect(object sender, EventArgs e)
         {
             string selectedSpecies = SpeciesList.SelectedItems[0].ToString();
@@ -105,6 +123,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             SpeciesRtf.LoadFile($@"{_speciesDescriptionsPath}\{selectedSpecies}.rtf");
         }
 
+        // This will set the selected species so we can save the character information in the future.
         private void SpeciesSelectBtn_Click(object sender, EventArgs e)
         {
             if (_selectedSpecies == null)
@@ -123,6 +142,8 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
 
         #region CLASSES TAB CODE
 
+        // This will set the selected class from the ClassList and save that information
+        // It will change the saved information whenever the ClassList index is changed
         private void ClassSelect(object sender, EventArgs e)
         {
             string selectedClass = ClassesList.SelectedItems[0].ToString();
@@ -131,11 +152,13 @@ namespace SW5E_App.Player_Things.Character_Builder_Forms
             ClassesRtf.LoadFile($@"{_classesDescriptionsPath}\{selectedClass}.rtf");
         }
 
+        // Simply used to move back to the Species Tab in the event information needs to change
         private void BackToSpeciesBtn_Click(object sender, EventArgs e)
         {
             CharacterBuilderTabs.SelectTab(0);
         }
 
+        // This will set the selected class so we can save the character information in the future.
         private void ClassSelectBtn_Click(object sender, EventArgs e)
         {
             if (_selectedClass == null)

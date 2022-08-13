@@ -1,12 +1,14 @@
 {
-	"height": {
-		"base": "6' 0\"",
-		"die": "d12",
+	"height":
+	{
+		"base": "3' 2\"",
+		"die": "d6",
 		"dieAmount": 2
 	},
-	"weight": {
-		"base": "175 lb.",
-		"die": "d6",
+	"weight":
+	{
+		"base": "50 lb.",
+		"die": "d4",
 		"dieAmount": 2
 	},
 	"abilityIncrease": {
@@ -16,16 +18,17 @@
 			"count": 1
 		},
 		"secondary": {
-			"ability": [ "Wisdom" ],
+			"ability": [ "Dexterity" ],
 			"increase": 1,
 			"count": 1
 		}
 	},
-	"size": "Medium",
-	"speed": 30,
+	"size": "Small",
+	"speed": 25,
 	"type": null,
-	"languages": [
-		"Besalisk",
-		"Galactic Basic"
+	"languages":
+	[
+		"Galactic Basic",
+		"Dug"
 	]
 }

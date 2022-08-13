@@ -23,6 +23,7 @@
 	},
 	"size": "Tiny",
 	"speed": 20,
+	"type": null,
 	"languages": [
 		"Anzellan",
 		"Galactic Basic"

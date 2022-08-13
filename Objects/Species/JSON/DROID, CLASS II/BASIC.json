@@ -1,15 +1,13 @@
 {
-	"height":
-	{
-		"base": "5' 5\"",
-		"die": "d10",
+	"height": {
+		"base": "2' 5\"",
+		"die": "d8",
 		"dieAmount": 2
 	},
-	"weight":
-	{
-		"base": "140 lb.",
-		"die": "d4",
-		"dieAmount": 2
+	"weight": {
+		"base": "60 lb.",
+		"die": null,
+		"dieAmount": 1
 	},
 	"abilityIncrease": {
 		"primary": {
@@ -23,12 +21,12 @@
 			"count": 1
 		}
 	},
-	"size": "Medium",
-	"speed": 30,
-	"type": null,
-	"languages":
-	[
-		"Galactic Basic",
-		"Aqualish"
+	"size": "Small",
+	"speed": 25,
+	"type": "droid",
+	"languages": [
+		"Binary",
+		"Galactic Basic (understand spoken/written only)",
+		"any not spoken"
 	]
 }

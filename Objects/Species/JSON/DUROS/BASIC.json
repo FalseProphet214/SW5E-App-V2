@@ -1,22 +1,24 @@
 {
-	"height": {
-		"base": "4' 10\"",
-		"die": "d8",
+	"height":
+	{
+		"base": "5' 5\"",
+		"die": "d10",
 		"dieAmount": 2
 	},
-	"weight": {
-		"base": "120 lb.",
+	"weight":
+	{
+		"base": "115 lb.",
 		"die": "d4",
 		"dieAmount": 2
 	},
 	"abilityIncrease": {
 		"primary": {
-			"ability": [ "Constitution" ],
+			"ability": [ "Dexterity" ],
 			"increase": 2,
 			"count": 1
 		},
 		"secondary": {
-			"ability": [ "Charisma" ],
+			"ability": [ "Intelligence" ],
 			"increase": 1,
 			"count": 1
 		}
@@ -24,8 +26,9 @@
 	"size": "Medium",
 	"speed": 30,
 	"type": null,
-	"languages": [
-		"Devaronese",
-		"Galactic Basic"
+	"languages":
+	[
+		"Galactic Basic",
+		"Durese"
 	]
 }

@@ -13,6 +13,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Objects.SpeciesObjects.Basic
         public AbilityIncrease AbilityIncrease { get; set; }
         public string Size { get; set; }
         public int Speed { get; set; }
+        public string type { get; set; }
         public string[] Languages { get; set; }
     }
 }

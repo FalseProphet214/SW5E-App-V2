@@ -1,12 +1,10 @@
 {
-	"height":
-	{
+	"height": {
 		"base": "5' 8\"",
 		"die": "d8",
 		"dieAmount": 2
 	},
-	"weight":
-	{
+	"weight": {
 		"base": "120 lb.",
 		"die": "d4",
 		"dieAmount": 2
@@ -25,8 +23,8 @@
 	},
 	"size": "Medium",
 	"speed": 30,
-	"languages":
-	[
+	"type": null,
+	"languages": [
 		"Cerean",
 		"Galactic Basic"
 	]

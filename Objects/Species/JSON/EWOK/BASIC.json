@@ -1,13 +1,15 @@
 {
-	"height": {
-		"base": "5' 5\"",
-		"die": "d8",
+	"height":
+	{
+		"base": "2' 9\"",
+		"die": "d6",
 		"dieAmount": 2
 	},
-	"weight": {
-		"base": "120 lb.",
-		"die": "d4",
-		"dieAmount": 2
+	"weight":
+	{
+		"base": "40 lb.",
+		"die": null,
+		"dieAmount": 1
 	},
 	"abilityIncrease": {
 		"primary": {
@@ -16,7 +18,7 @@
 			"count": 1
 		},
 		"secondary": {
-			"ability": [ "Wisdom" ],
+			"ability": [ "Constitution" ],
 			"increase": 1,
 			"count": 1
 		}
@@ -24,8 +26,9 @@
 	"size": "Medium",
 	"speed": 30,
 	"type": null,
-	"languages": [
-		"Chagri",
-		"Galactic Basic"
+	"languages":
+	[
+		"Galactic Basic (can only understand spoken and written)",
+		"Ewokese"
 	]
 }

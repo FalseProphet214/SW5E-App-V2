@@ -1,12 +1,10 @@
 {
-	"height":
-	{
+	"height": {
 		"base": "3' 2\"",
 		"die": "d8",
 		"dieAmount": 2
 	},
-	"weight":
-	{
+	"weight": {
 		"base": "50 lb.",
 		"die": null,
 		"dieAmount": 1
@@ -25,8 +23,8 @@
 	},
 	"size": "medium",
 	"speed": 30,
-	"languages":
-	[
+	"type": null,
+	"languages": [
 		"Ardennian",
 		"Galactic Basic"
 	]

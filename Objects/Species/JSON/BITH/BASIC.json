@@ -1,18 +1,15 @@
 {
-	"height":
-	{
+	"height": {
 		"base": "4' 9\"",
 		"die": "d6",
 		"dieAmount": 2
 	},
-	"weight":
-	{
+	"weight": {
 		"base": "100 lb.",
 		"die": "d4",
 		"dieAmount": 2
 	},
-	"abilityIncrease":
-	{
+	"abilityIncrease": {
 		"primary": {
 			"ability": [ "Intelligence" ],
 			"increase": 2,
@@ -26,8 +23,8 @@
 	},
 	"size": "Medium",
 	"speed": 30,
-	"languages":
-	[
+	"type": null,
+	"languages": [
 		"Bith",
 		"Galactic Basic",
 		"any"
