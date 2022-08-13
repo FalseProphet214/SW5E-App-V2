@@ -11,22 +11,17 @@
 		"die": "d4",
 		"dieAmount": 2
 	},
-	"abilityIncrease":
-	{
-		"primary":
-		[
-			{
-				"ability": "cha",
-				"increase": 2
-			}
-		],
-		"secondary":
-		[
-			{
-				"ability": "any",
-				"increase": 1
-			}
-		]
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Charisma" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ],
+			"increase": 1,
+			"count": 1
+		}
 	},
 	"size": "Medium",
 	"speed": 30,

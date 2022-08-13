@@ -11,22 +11,17 @@
 		"die": "d6",
 		"dieAmount": 2
 	},
-	"abilityIncrease":
-	{
-		"primary":
-		[
-			{
-				"ability": "str",
-				"increase": 2
-			}
-		],
-		"secondary":
-		[
-			{
-				"ability": "wis",
-				"increase": 1
-			}
-		]
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Strength" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Wisdom" ],
+			"increase": 1,
+			"count": 1
+		}
 	},
 	"size": "Medium",
 	"speed": 30,

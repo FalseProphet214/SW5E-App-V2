@@ -8,7 +8,8 @@ namespace SW5E_App.Player_Things.Character_Builder_Objects.SpeciesObjects.Basic
 {
     public class Primary
     {
-        public string Ability { get; set; }
+        public string[] Ability { get; set; }
         public int Increase { get; set; }
+        public int Count { get; set; }
     }
 }

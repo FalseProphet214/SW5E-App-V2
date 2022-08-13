@@ -8,7 +8,7 @@ namespace SW5E_App.Player_Things.Character_Builder_Objects.SpeciesObjects.Basic
 {
     public class AbilityIncrease
     {
-        public Primary[] Primary { get; set; }
-        public Secondary[] Secondary { get; set; }
+        public Primary Primary { get; set; }
+        public Secondary Secondary { get; set; }
      }
 }

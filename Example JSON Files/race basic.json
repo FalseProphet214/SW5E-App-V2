@@ -9,24 +9,22 @@
 	{
 		"base": "100 lb.",
 		"die": "d4",
-		"dieAmount": 1
+		"dieAmount": 2
 	},
 	"abilityIncrease":
 	{
 		"primary":
-		[
-			{
-				"ability": "int",
-				"increase": 2
-			}
-		],
+		{
+			"ability": [ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ],
+			"increase": 2,
+			"count": 1
+		},
 		"secondary":
-		[
-			{
-				"ability": "int",
-				"increase": 1
-			}
-		]
+		{
+			"ability": [ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ],
+			"increase": 1,
+			"count": 1
+		}
 	},
 	"size": "size",
 	"speed": 30,

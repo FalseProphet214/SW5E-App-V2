@@ -11,22 +11,17 @@
 		"die": "d4",
 		"dieAmount": 2
 	},
-	"abilityIncrease":
-	{
-		"primary":
-		[
-			{
-				"ability": "int",
-				"increase": 2
-			}
-		],
-		"secondary":
-		[
-			{
-				"ability": "dex",
-				"increase": 1
-			}
-		]
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Intelligence" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Dexterity" ],
+			"increase": 1,
+			"count": 1
+		}
 	},
 	"size": "Medium",
 	"speed": 30,
