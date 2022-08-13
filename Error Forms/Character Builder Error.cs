@@ -9,13 +9,15 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SW5E_App.Player_Things.Character_Builder_Forms
+namespace SW5E_App.Error_Forms
 {
-    public partial class Character_Builder : Form
+    public partial class Character_Builder_Error : Form
     {
-        public Character_Builder()
+        public Character_Builder_Error(string missingObject)
         {
             InitializeComponent();
+
+            ErrorMsg.Text = "Missing " + missingObject + "\n" + "Please select " + missingObject + " and then continue through the form";
         }
     }
 }

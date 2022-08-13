@@ -1,0 +1,31 @@
+{
+	"height": {
+		"base": "5' 5\"",
+		"die": "d8",
+		"dieAmount": 2
+	},
+	"weight": {
+		"base": "120 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Dexterity" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Wisdom" ],
+			"increase": 1,
+			"count": 1
+		}
+	},
+	"size": "Medium",
+	"speed": 30,
+	"type": null,
+	"languages": [
+		"Chagri",
+		"Galactic Basic"
+	]
+}

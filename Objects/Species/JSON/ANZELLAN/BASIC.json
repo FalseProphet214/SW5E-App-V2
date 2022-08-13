@@ -1,0 +1,31 @@
+{
+	"height": {
+		"base": "1' 0\"",
+		"die": "d6",
+		"dieAmount": 2
+	},
+	"weight": {
+		"base": "3 lb.",
+		"die": null,
+		"dieAmount": 1
+	},
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Intelligence" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma" ],
+			"increase": 1,
+			"count": 2
+		}
+	},
+	"size": "Tiny",
+	"speed": 20,
+	"type": null,
+	"languages": [
+		"Anzellan",
+		"Galactic Basic"
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"height":
+	{
+		"base": "5' 2\"",
+		"die": "d8",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "110 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Constitution" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Strength", "Dexterity" ],
+			"increase": 1,
+			"count": 1
+		}
+	},
+	"size": "Medium",
+	"speed": 30,
+	"type": "droid",
+	"languages":
+	[
+		"Galactic Basic",
+		"Binary (cannot speak it)",
+		"any"
+	]
+}

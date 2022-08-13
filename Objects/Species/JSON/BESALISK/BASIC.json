@@ -1,0 +1,31 @@
+{
+	"height": {
+		"base": "6' 0\"",
+		"die": "d12",
+		"dieAmount": 2
+	},
+	"weight": {
+		"base": "175 lb.",
+		"die": "d6",
+		"dieAmount": 2
+	},
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Strength" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Wisdom" ],
+			"increase": 1,
+			"count": 1
+		}
+	},
+	"size": "Medium",
+	"speed": 30,
+	"type": null,
+	"languages": [
+		"Besalisk",
+		"Galactic Basic"
+	]
+}

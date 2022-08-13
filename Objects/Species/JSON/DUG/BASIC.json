@@ -1,0 +1,34 @@
+{
+	"height":
+	{
+		"base": "3' 2\"",
+		"die": "d6",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "50 lb.",
+		"die": "d4",
+		"dieAmount": 2
+	},
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Strength" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Dexterity" ],
+			"increase": 1,
+			"count": 1
+		}
+	},
+	"size": "Small",
+	"speed": 25,
+	"type": null,
+	"languages":
+	[
+		"Galactic Basic",
+		"Dug"
+	]
+}

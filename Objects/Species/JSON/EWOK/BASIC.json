@@ -1,0 +1,34 @@
+{
+	"height":
+	{
+		"base": "2' 9\"",
+		"die": "d6",
+		"dieAmount": 2
+	},
+	"weight":
+	{
+		"base": "40 lb.",
+		"die": null,
+		"dieAmount": 1
+	},
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Dexterity" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Constitution" ],
+			"increase": 1,
+			"count": 1
+		}
+	},
+	"size": "Medium",
+	"speed": 30,
+	"type": null,
+	"languages":
+	[
+		"Galactic Basic (can only understand spoken and written)",
+		"Ewokese"
+	]
+}

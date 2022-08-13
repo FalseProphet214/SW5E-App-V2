@@ -1,0 +1,31 @@
+{
+	"height": {
+		"base": "3' 2\"",
+		"die": "d8",
+		"dieAmount": 2
+	},
+	"weight": {
+		"base": "50 lb.",
+		"die": null,
+		"dieAmount": 1
+	},
+	"abilityIncrease": {
+		"primary": {
+			"ability": [ "Dexterity" ],
+			"increase": 2,
+			"count": 1
+		},
+		"secondary": {
+			"ability": [ "Charisma" ],
+			"increase": 1,
+			"count": 1
+		}
+	},
+	"size": "medium",
+	"speed": 30,
+	"type": null,
+	"languages": [
+		"Ardennian",
+		"Galactic Basic"
+	]
+}
